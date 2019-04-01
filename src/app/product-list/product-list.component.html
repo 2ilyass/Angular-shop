@@ -1,0 +1,18 @@
+
+  <div class="ui divided items ">
+    <app-product-row 
+         *ngFor="let myProd of productList"
+          [product]="myProd"
+           (click)='clicked(myProd)' 
+            [class.selected]="isSelected(myProd)"
+             
+               [ngStyle]="{ 'box-shadow': (isSelected(myProd) ? '0 10px 20px rgba(0,0,0,0.19)' : '0 10px 20px rgba(0,0,0,0)'),
+                            'border': (isSelected(myProd) ? '2px solid #00B5AD' : 'none')}
+               "
+
+             
+           >
+    </app-product-row>
+  </div>
+
+  

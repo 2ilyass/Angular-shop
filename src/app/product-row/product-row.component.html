@@ -1,0 +1,30 @@
+<div class="ui items" style="padding:1em 2em 0 2em;" >
+  <div class="item">
+    <div class="ui small image">
+      <img [src]="product.imageUrl">
+    </div>
+    <div class="content">
+      <a class="header">{{product.name}}</a>
+      <div class="meta">
+        <span class="description">
+          <app-product-departement [product]="product"></app-product-departement>
+        </span>
+      </div>
+      <div class="description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae error, est vero, cupiditate vel corrupti culpa impedit velit incidunt perspiciatis temporibus inventore, blanditiis aspernatur minima nisi pariatur ut? Rerum, iusto!</p>
+      </div>
+      <div class="extra">
+        <div class="ui right floated primary button">
+          Buy Now
+          <i class="right chevron icon"></i>
+        </div>
+        <div class="ui teal image label">
+            s{{product.tag}}
+          <i class="delete icon"></i>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
